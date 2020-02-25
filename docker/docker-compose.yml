@@ -1,0 +1,5 @@
+version: "3"
+
+services:
+  ore-wa-go:
+    build: .
