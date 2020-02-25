@@ -1,2 +1,3 @@
-cd ./docker
+#!/usr/bin/env bash
+
 docker-compose up
