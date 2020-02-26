@@ -1,9 +1,12 @@
-FROM golang:alpine
+FROM golang:alpine AS build_base
+
 LABEL maintainer="Nattapon Pondongnok <nainatjab999@gmail.com>"
+
+ENV GO111MODULE=on
 
 WORKDIR /go/src/app
 
-COPY ./src /go/src/app
+COPY . /go/src/app
 
 RUN go mod download
 
